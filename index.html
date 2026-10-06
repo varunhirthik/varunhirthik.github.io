@@ -1,329 +1,889 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Varun Hirthik · Software Engineer · Hackathon Finalist</title>
-<meta name="description" content="Final-year CSE student. Adobe India Hackathon 2025 Runner-Up, HP Power Lab 2.0 Top 34 finalist. Builds optimization and AI systems and ships them.">
-<meta property="og:title" content="Varun Hirthik · Software Engineer">
-<meta property="og:description" content="Adobe India Hackathon 2025 Runner-Up. HP Power Lab 2.0 Top 34. Builds optimization and AI systems and ships them.">
-<meta property="og:image" content="assets/hp-power-lab.jpg">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231F4FFF'/%3E%3Ctext x='50' y='68' font-size='56' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EV%3C/text%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-<style>
-:root{
-  --paper:#F2F4F7; --surface:#FFFFFF; --ink:#0E1726; --muted:#566275; --line:#D3D9E2;
-  --accent:#1F4FFF; --accent-ink:#FFFFFF; --gold:#B87A00;
-  --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
-  --body:"Public Sans","Segoe UI",system-ui,sans-serif;
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){
-    --paper:#0B1220; --surface:#111A2C; --ink:#E8ECF3; --muted:#9AA5B6; --line:#243048;
-    --accent:#7C98FF; --accent-ink:#0B1220; --gold:#E5B13A;
-  }
-}
-:root[data-theme="dark"]{
-  --paper:#0B1220; --surface:#111A2C; --ink:#E8ECF3; --muted:#9AA5B6; --line:#243048;
-  --accent:#7C98FF; --accent-ink:#0B1220; --gold:#E5B13A;
-}
-*{box-sizing:border-box}
-html{scroll-behavior:smooth;scroll-padding-top:72px}
-body{margin:0;background:var(--paper);color:var(--ink);font:400 1.0625rem/1.65 var(--body);-webkit-font-smoothing:antialiased}
-img{max-width:100%;display:block}
-a{color:inherit}
-:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
-.wrap{max-width:1080px;margin:0 auto;padding:0 24px}
-.skip{position:absolute;left:-999px;top:8px;background:var(--accent);color:var(--accent-ink);padding:8px 14px;z-index:20}
-.skip:focus{left:8px}
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Varun Hirthik · Hackathon Portfolio · Hack With Bangalore 4.0</title>
+  <meta name="description"
+    content="Portfolio for Hack With Bangalore 4.0. Adobe India Hackathon 2025 Runner-Up, HP Power Lab 2.0 Top 34 finalist. Builds AI and optimization systems and ships them.">
+  <meta property="og:title" content="Varun Hirthik · Software Engineer">
+  <meta property="og:description"
+    content="Adobe India Hackathon 2025 Runner-Up. HP Power Lab 2.0 Top 34. Builds optimization and AI systems and ships them.">
+  <meta property="og:image" content="assets/hp-power-lab.jpg">
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%231F4FFF'/%3E%3Ctext x='50' y='68' font-size='56' font-family='Arial' font-weight='700' text-anchor='middle' fill='white'%3EV%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --paper: #F2F4F7;
+      --surface: #FFFFFF;
+      --ink: #0E1726;
+      --muted: #566275;
+      --line: #D3D9E2;
+      --accent: #1F4FFF;
+      --accent-ink: #FFFFFF;
+      --gold: #B87A00;
+      --display: "Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+      --body: "Public Sans", "Segoe UI", system-ui, sans-serif;
+    }
 
-/* nav */
-header.top{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--paper) 90%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
-header.top .wrap{display:flex;align-items:center;justify-content:space-between;height:60px;gap:16px}
-.brand{font:700 1.05rem var(--display);text-decoration:none;letter-spacing:-.01em}
-nav{display:flex;gap:22px;align-items:center;font-size:.95rem}
-nav a{text-decoration:none;color:var(--muted);padding:4px 0}
-nav a:hover{color:var(--ink)}
-#theme{border:1px solid var(--line);background:var(--surface);color:var(--ink);width:34px;height:34px;border-radius:50%;cursor:pointer;font-size:1rem;line-height:1}
+    @media (prefers-color-scheme:dark) {
+      :root:not([data-theme="light"]) {
+        --paper: #0B1220;
+        --surface: #111A2C;
+        --ink: #E8ECF3;
+        --muted: #9AA5B6;
+        --line: #243048;
+        --accent: #7C98FF;
+        --accent-ink: #0B1220;
+        --gold: #E5B13A;
+      }
+    }
 
-/* hero */
-.hero{padding:64px 0 56px}
-.hero .wrap{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center}
-h1{font:800 clamp(2.8rem,7.4vw,5.4rem)/.95 var(--display);letter-spacing:-.035em;margin:0 0 24px}
-.lede{font-size:1.2rem;max-width:34em;margin:0 0 28px}
-.btns{display:flex;flex-wrap:wrap;gap:12px}
-.btn{display:inline-block;padding:12px 20px;border-radius:6px;text-decoration:none;font-weight:600;font-size:.98rem;border:1.5px solid var(--ink)}
-.btn.primary{background:var(--accent);border-color:var(--accent);color:var(--accent-ink)}
-.btn:hover{transform:translateY(-1px)}
-.hero figure{margin:0}
-.hero img{border-radius:4px;width:100%;aspect-ratio:558/364;object-fit:cover}
-figcaption{font-size:.88rem;color:var(--muted);margin-top:10px}
+    :root[data-theme="dark"] {
+      --paper: #0B1220;
+      --surface: #111A2C;
+      --ink: #E8ECF3;
+      --muted: #9AA5B6;
+      --line: #243048;
+      --accent: #7C98FF;
+      --accent-ink: #0B1220;
+      --gold: #E5B13A;
+    }
 
-/* section heads */
-section{padding:72px 0;border-top:1px solid var(--line)}
-h2{font:700 clamp(1.8rem,4vw,2.6rem)/1.1 var(--display);letter-spacing:-.025em;margin:0 0 12px}
-.sub{color:var(--muted);max-width:40em;margin:0 0 44px}
+    * {
+      box-sizing: border-box
+    }
 
-/* hackathon ledger */
-.entry{display:grid;grid-template-columns:260px 1fr;gap:40px;padding:36px 0;border-top:1px solid var(--line)}
-.entry:first-of-type{border-top:2px solid var(--ink)}
-.place{font:800 clamp(2rem,4.2vw,3rem)/1 var(--display);letter-spacing:-.03em;color:var(--accent)}
-.entry.lead .place{color:var(--gold)}
-.field{color:var(--muted);font-size:.95rem;margin-top:10px}
-.entry h3{font:700 1.45rem/1.2 var(--display);letter-spacing:-.015em;margin:0 0 4px}
-.where{color:var(--muted);margin:0 0 14px;font-size:.98rem}
-.entry p{margin:0 0 12px;max-width:42em}
-.entry .shot{margin:18px 0 0;max-width:460px}
-.entry .shot img{border-radius:4px;width:100%;height:auto}
-.meta{font-size:.93rem;color:var(--muted)}
-.meta b{color:var(--ink);font-weight:600}
-.tags{display:flex;flex-wrap:wrap;gap:8px;margin:14px 0 0;padding:0;list-style:none}
-.tags li{font-size:.85rem;border:1px solid var(--line);background:var(--surface);padding:3px 10px;border-radius:99px}
-.links{display:flex;flex-wrap:wrap;gap:18px;margin-top:16px;font-weight:600;font-size:.97rem}
-.links a{color:var(--accent);text-decoration-thickness:2px;text-underline-offset:4px}
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 72px
+    }
 
-/* projects */
-.proj{display:grid;grid-template-columns:260px 1fr;gap:40px;padding:28px 0;border-top:1px solid var(--line)}
-.proj:first-of-type{border-top:2px solid var(--ink)}
-.proj h3{font:700 1.25rem/1.25 var(--display);margin:0;letter-spacing:-.01em}
-.proj .tag{color:var(--muted);font-size:.92rem;margin-top:4px}
-.proj p{margin:0 0 10px;max-width:42em}
+    body {
+      margin: 0;
+      background: var(--paper);
+      color: var(--ink);
+      font: 400 1.0625rem/1.65 var(--body);
+      -webkit-font-smoothing: antialiased
+    }
 
-/* experience */
-.role{max-width:46em}
-.role h3{font:700 1.45rem/1.2 var(--display);margin:0 0 4px;letter-spacing:-.015em}
-.role ul{padding-left:1.1em;margin:18px 0 0}
-.role li{margin-bottom:12px}
-.note{margin-top:22px;font-size:.93rem;color:var(--muted)}
+    img {
+      max-width: 100%;
+      display: block
+    }
 
-/* skills */
-dl.skills{display:grid;grid-template-columns:200px 1fr;gap:0;margin:0;border-top:2px solid var(--ink)}
-dl.skills dt,dl.skills dd{margin:0;padding:16px 0;border-bottom:1px solid var(--line)}
-dl.skills dt{font:700 1rem var(--display)}
-.edu{margin-top:44px;max-width:46em}
-.edu h3{font:700 1.25rem var(--display);margin:0 0 4px}
+    a {
+      color: inherit
+    }
 
-/* contact */
-.contact a.big{font:700 clamp(1.4rem,4vw,2.4rem)/1.2 var(--display);letter-spacing:-.02em;text-decoration-thickness:3px;text-underline-offset:6px;color:var(--accent);word-break:break-all}
-.contact ul{list-style:none;padding:0;margin:28px 0 0;display:flex;flex-wrap:wrap;gap:12px 28px;font-weight:600}
-footer{border-top:1px solid var(--line);padding:28px 0;color:var(--muted);font-size:.9rem}
+    :focus-visible {
+      outline: 3px solid var(--accent);
+      outline-offset: 3px;
+      border-radius: 2px
+    }
 
-@media (max-width:820px){
-  .hero .wrap{grid-template-columns:1fr;gap:32px}
-  .entry,.proj{grid-template-columns:1fr;gap:14px}
-  dl.skills{grid-template-columns:1fr}
-  dl.skills dt{border-bottom:0;padding-bottom:0}
-  nav a.hide-sm{display:none}
-  .hero{padding-top:40px}
-}
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
-</style>
+    .wrap {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: 0 24px
+    }
+
+    .skip {
+      position: absolute;
+      left: -999px;
+      top: 8px;
+      background: var(--accent);
+      color: var(--accent-ink);
+      padding: 8px 14px;
+      z-index: 20
+    }
+
+    .skip:focus {
+      left: 8px
+    }
+
+    /* nav */
+    header.top {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: color-mix(in srgb, var(--paper) 90%, transparent);
+      backdrop-filter: blur(8px);
+      border-bottom: 1px solid var(--line)
+    }
+
+    header.top .wrap {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+      gap: 16px
+    }
+
+    .brand {
+      font: 700 1.05rem var(--display);
+      text-decoration: none;
+      letter-spacing: -.01em
+    }
+
+    nav {
+      display: flex;
+      gap: 22px;
+      align-items: center;
+      font-size: .95rem
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--muted);
+      padding: 4px 0
+    }
+
+    nav a:hover {
+      color: var(--ink)
+    }
+
+    #theme {
+      border: 1px solid var(--line);
+      background: var(--surface);
+      color: var(--ink);
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 1rem;
+      line-height: 1
+    }
+
+    /* hero */
+    .hero {
+      padding: 64px 0 56px
+    }
+
+    .hero .wrap {
+      display: grid;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 48px;
+      align-items: center
+    }
+
+    h1 {
+      font: 800 clamp(2.8rem, 7.4vw, 5.4rem)/.95 var(--display);
+      letter-spacing: -.035em;
+      margin: 0 0 24px
+    }
+
+    .lede {
+      font-size: 1.2rem;
+      max-width: 34em;
+      margin: 0 0 28px
+    }
+
+    .btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 12px 20px;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: .98rem;
+      border: 1.5px solid var(--ink)
+    }
+
+    .btn.primary {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: var(--accent-ink)
+    }
+
+    .btn:hover {
+      transform: translateY(-1px)
+    }
+
+    .event {
+      margin: 28px 0 0;
+      padding: 4px 0 4px 16px;
+      border-left: 4px solid var(--gold);
+      max-width: 34em;
+      font-size: .98rem
+    }
+
+    .event strong {
+      display: block;
+      font: 700 1.05rem var(--display);
+      margin-bottom: 2px
+    }
+
+    .event span {
+      color: var(--muted)
+    }
+
+    .hero figure {
+      margin: 0
+    }
+
+    .hero img {
+      border-radius: 4px;
+      width: 100%;
+      aspect-ratio: 558/364;
+      object-fit: cover
+    }
+
+    figcaption {
+      font-size: .88rem;
+      color: var(--muted);
+      margin-top: 10px
+    }
+
+    /* section heads */
+    section {
+      padding: 72px 0;
+      border-top: 1px solid var(--line)
+    }
+
+    h2 {
+      font: 700 clamp(1.8rem, 4vw, 2.6rem)/1.1 var(--display);
+      letter-spacing: -.025em;
+      margin: 0 0 12px
+    }
+
+    .sub {
+      color: var(--muted);
+      max-width: 40em;
+      margin: 0 0 44px
+    }
+
+    /* hackathon ledger */
+    .entry {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 40px;
+      padding: 36px 0;
+      border-top: 1px solid var(--line)
+    }
+
+    .entry:first-of-type {
+      border-top: 2px solid var(--ink)
+    }
+
+    .place {
+      font: 800 clamp(2rem, 4.2vw, 3rem)/1 var(--display);
+      letter-spacing: -.03em;
+      color: var(--accent)
+    }
+
+    .entry.lead .place {
+      color: var(--gold)
+    }
+
+    .field {
+      color: var(--muted);
+      font-size: .95rem;
+      margin-top: 10px
+    }
+
+    .entry h3 {
+      font: 700 1.45rem/1.2 var(--display);
+      letter-spacing: -.015em;
+      margin: 0 0 4px
+    }
+
+    .where {
+      color: var(--muted);
+      margin: 0 0 14px;
+      font-size: .98rem
+    }
+
+    .entry p {
+      margin: 0 0 12px;
+      max-width: 42em
+    }
+
+    .entry .shot {
+      margin: 18px 0 0;
+      max-width: 460px
+    }
+
+    .entry .shot img {
+      border-radius: 4px;
+      width: 100%;
+      height: auto
+    }
+
+    .meta {
+      font-size: .93rem;
+      color: var(--muted)
+    }
+
+    .meta b {
+      color: var(--ink);
+      font-weight: 600
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 14px 0 0;
+      padding: 0;
+      list-style: none
+    }
+
+    .tags li {
+      font-size: .85rem;
+      border: 1px solid var(--line);
+      background: var(--surface);
+      padding: 3px 10px;
+      border-radius: 99px
+    }
+
+    .links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+      margin-top: 16px;
+      font-weight: 600;
+      font-size: .97rem
+    }
+
+    .links a {
+      color: var(--accent);
+      text-decoration-thickness: 2px;
+      text-underline-offset: 4px
+    }
+
+    /* projects */
+    .proj {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 40px;
+      padding: 28px 0;
+      border-top: 1px solid var(--line)
+    }
+
+    .proj:first-of-type {
+      border-top: 2px solid var(--ink)
+    }
+
+    .proj h3 {
+      font: 700 1.25rem/1.25 var(--display);
+      margin: 0;
+      letter-spacing: -.01em
+    }
+
+    .proj .tag {
+      color: var(--muted);
+      font-size: .92rem;
+      margin-top: 4px
+    }
+
+    .proj p {
+      margin: 0 0 10px;
+      max-width: 42em
+    }
+
+    /* ship fast */
+    .ship {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      margin-top: 8px;
+      border-top: 2px solid var(--ink);
+      padding-top: 28px
+    }
+
+    .ship h3 {
+      font: 700 1.15rem/1.25 var(--display);
+      margin: 0 0 8px;
+      letter-spacing: -.01em
+    }
+
+    .ship p {
+      margin: 0;
+      font-size: .98rem;
+      color: var(--muted)
+    }
+
+    .stackline {
+      margin-top: 36px;
+      padding-top: 24px;
+      border-top: 1px solid var(--line);
+      max-width: 46em
+    }
+
+    .stackline h3 {
+      font: 700 1.15rem var(--display);
+      margin: 0 0 6px
+    }
+
+    .stackline p {
+      margin: 0
+    }
+
+    /* experience */
+    .role {
+      max-width: 46em
+    }
+
+    .role h3 {
+      font: 700 1.45rem/1.2 var(--display);
+      margin: 0 0 4px;
+      letter-spacing: -.015em
+    }
+
+    .role ul {
+      padding-left: 1.1em;
+      margin: 18px 0 0
+    }
+
+    .role li {
+      margin-bottom: 12px
+    }
+
+    .note {
+      margin-top: 22px;
+      font-size: .93rem;
+      color: var(--muted)
+    }
+
+    /* skills */
+    dl.skills {
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      gap: 0;
+      margin: 0;
+      border-top: 2px solid var(--ink)
+    }
+
+    dl.skills dt,
+    dl.skills dd {
+      margin: 0;
+      padding: 16px 0;
+      border-bottom: 1px solid var(--line)
+    }
+
+    dl.skills dt {
+      font: 700 1rem var(--display)
+    }
+
+    .edu {
+      margin-top: 44px;
+      max-width: 46em
+    }
+
+    .edu h3 {
+      font: 700 1.25rem var(--display);
+      margin: 0 0 4px
+    }
+
+    /* contact */
+    .contact a.big {
+      font: 700 clamp(1.4rem, 4vw, 2.4rem)/1.2 var(--display);
+      letter-spacing: -.02em;
+      text-decoration-thickness: 3px;
+      text-underline-offset: 6px;
+      color: var(--accent);
+      word-break: break-all
+    }
+
+    .contact ul {
+      list-style: none;
+      padding: 0;
+      margin: 28px 0 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px 28px;
+      font-weight: 600
+    }
+
+    footer {
+      border-top: 1px solid var(--line);
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: .9rem
+    }
+
+    @media (max-width:820px) {
+      .hero .wrap {
+        grid-template-columns: 1fr;
+        gap: 32px
+      }
+
+      .entry,
+      .proj {
+        grid-template-columns: 1fr;
+        gap: 14px
+      }
+
+      .ship {
+        grid-template-columns: 1fr;
+        gap: 24px
+      }
+
+      dl.skills {
+        grid-template-columns: 1fr
+      }
+
+      dl.skills dt {
+        border-bottom: 0;
+        padding-bottom: 0
+      }
+
+      nav a.hide-sm {
+        display: none
+      }
+
+      .hero {
+        padding-top: 40px
+      }
+    }
+
+    @media (prefers-reduced-motion:reduce) {
+      html {
+        scroll-behavior: auto
+      }
+
+      .btn:hover {
+        transform: none
+      }
+    }
+  </style>
 </head>
+
 <body>
-<a class="skip" href="#hackathons">Skip to hackathons</a>
+  <a class="skip" href="#hackathons">Skip to hackathons</a>
 
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="#top">Varun Hirthik</a>
-    <nav aria-label="Primary">
-      <a href="#hackathons">Hackathons</a>
-      <a href="#projects" class="hide-sm">Projects</a>
-      <a href="#experience" class="hide-sm">Experience</a>
-      <a href="#skills" class="hide-sm">Skills</a>
-      <a href="#contact">Contact</a>
-      <button id="theme" type="button" aria-label="Switch colour theme" title="Switch colour theme">◐</button>
-    </nav>
-  </div>
-</header>
+  <header class="top">
+    <div class="wrap">
+      <a class="brand" href="#top">Varun Hirthik</a>
+      <nav aria-label="Primary">
+        <a href="#hackathons">Hackathons</a>
+        <a href="#ship" class="hide-sm">Approach</a>
+        <a href="#projects" class="hide-sm">Projects</a>
+        <a href="#experience" class="hide-sm">Experience</a>
+        <a href="#skills" class="hide-sm">Skills</a>
+        <a href="#contact">Contact</a>
+        <button id="theme" type="button" aria-label="Switch colour theme" title="Switch colour theme">◐</button>
+      </nav>
+    </div>
+  </header>
 
-<main id="top">
-<div class="hero">
-  <div class="wrap">
-    <div>
-      <h1>Varun Hirthik</h1>
-      <p class="lede">I build optimization and AI systems, then deploy them. Final-year Computer Science student, Adobe India Hackathon 2025 Runner-Up, and software engineering intern at HPCL.</p>
-      <div class="btns">
-        <a class="btn primary" href="#hackathons">See hackathon results</a>
-        <a class="btn" href="https://github.com/varunhirthik">GitHub profile</a>
+  <main id="top">
+    <div class="hero">
+      <div class="wrap">
+        <div>
+          <h1>Varun Hirthik</h1>
+          <p class="lede">I build optimization and AI systems, then deploy them. Final-year Computer Science student,
+            Adobe India Hackathon 2025 Runner-Up, and software engineering intern at HPCL.</p>
+          <div class="event">
+            <strong>Hack With Bangalore 4.0</strong>
+            <span>30 October 2026 · Microsoft Office, Bangalore. This page leads with my hackathon results, then shows
+              how I build and ship in a short time.</span>
+          </div>
+          <div class="btns" style="margin-top:28px">
+            <a class="btn primary" href="#hackathons">See hackathon results</a>
+            <a class="btn" href="https://github.com/varunhirthik">GitHub profile</a>
+          </div>
+        </div>
+        <figure>
+          <img src="assets/hp-power-lab.jpg"
+            alt="Varun and teammates presenting RouteX on stage at the HP Power Lab 2.0 Grand Finale"
+            fetchpriority="high">
+          <figcaption>Presenting RouteX at the HP Power Lab 2.0 Grand Finale.</figcaption>
+        </figure>
       </div>
     </div>
-    <figure>
-      <img src="assets/hp-power-lab.jpg" alt="Varun and teammates presenting RouteX on stage at the HP Power Lab 2.0 Grand Finale" fetchpriority="high">
-      <figcaption>Presenting RouteX at the HP Power Lab 2.0 Grand Finale.</figcaption>
-    </figure>
-  </div>
-</div>
 
-<section id="hackathons">
-  <div class="wrap">
-    <h2>Hackathons and awards</h2>
-    <p class="sub">Four national-level results in the last year, each with a working product behind it.</p>
+    <section id="hackathons">
+      <div class="wrap">
+        <h2>Hackathons and awards</h2>
+        <p class="sub">Four national-level results in the last year, each with a working product behind it.</p>
 
-    <article class="entry lead">
-      <div>
-        <div class="place">Runner-Up</div>
-        <div class="field">Out of 262,162 registrations</div>
+        <article class="entry lead">
+          <div>
+            <div class="place">Runner-Up</div>
+            <div class="field">Out of 262,162 registrations</div>
+          </div>
+          <div>
+            <h3>Adobe India Hackathon 2025</h3>
+            <p class="where">Grand Finale, Noida · Team Debug Thugs (Sooravali)</p>
+            <p><b>Synapse-Docs</b> turns a library of PDFs into a searchable knowledge base. Select a passage while
+              reading and it surfaces related sections from your other documents in under 500 ms, generates insights
+              such as contradictions and examples, and can produce an audio podcast with Azure speech services.</p>
+            <p class="meta"><b>My role:</b> architecture and backend (FastAPI, vector search, deployment).
+              <b>Teammates:</b> Aadesh N, Midhunan Vijendra Prabhaharan.</p>
+            <figure class="shot"><img src="assets/adobe-finale.jpg"
+                alt="Receiving an award on stage at the Adobe India Hackathon 2025 Grand Finale" loading="lazy">
+            </figure>
+            <ul class="tags">
+              <li>Python</li>
+              <li>FastAPI</li>
+              <li>React</li>
+              <li>Gemini 2.5 Flash</li>
+              <li>FAISS</li>
+              <li>Azure Speech</li>
+              <li>Docker</li>
+              <li>Google Cloud Run</li>
+            </ul>
+            <div class="links">
+              <a href="https://synapse-docs-833062842245.us-central1.run.app/">Live app</a>
+              <a href="https://github.com/sooravali/synapse-docs">Source code</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div>
+            <div class="place">Top 34</div>
+            <div class="field">Out of 130,000+ registrations</div>
+          </div>
+          <div>
+            <h3>HP Power Lab 2.0</h3>
+            <p class="where">Grand Finale, Symbiosis International University · Problem set by HPCL</p>
+            <p><b>RouteX</b> plans monthly coastal shipping for a 9-tanker fleet. It has to meet 440,000 MT of demand
+              inside a 720-hour window at the lowest charter cost. A Google OR-Tools CP-SAT model evaluates 6,500+
+              voyage patterns in under 15 seconds, and a Next.js dashboard shows the plan on a map and a fleet timeline.
+            </p>
+            <p class="meta"><b>Teammates:</b> Midhunan Vijendra Prabhaharan, Joshua Karthik Ashok, Aadesh N.</p>
+            <ul class="tags">
+              <li>Python</li>
+              <li>OR-Tools CP-SAT</li>
+              <li>FastAPI</li>
+              <li>Next.js</li>
+              <li>TypeScript</li>
+              <li>MongoDB</li>
+            </ul>
+            <div class="links"><a href="https://lnkd.in/grSuqeQ5">Source code</a></div>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div>
+            <div class="place">Top 80</div>
+            <div class="field">Unstoppable E-School Leaders 2026</div>
+          </div>
+          <div>
+            <h3>Unstop Talent Meet 2026</h3>
+            <p class="where">Unstop</p>
+            <p>Named one of the Top 80 Unstoppable E-School Leaders and honoured on stage at the Unstop Talent Meet.</p>
+            <figure class="shot"><img src="assets/unstop.jpg"
+                alt="Receiving the Unstoppable E-School Leaders trophy on stage" loading="lazy"></figure>
+          </div>
+        </article>
+
+        <article class="entry">
+          <div>
+            <div class="place">Semi-Finalist</div>
+            <div class="field">ET-AI Hackathon 2026</div>
+          </div>
+          <div>
+            <h3>The Economic Times · May 2026</h3>
+            <p class="where">AI hackathon</p>
+            <p>Built an AI-driven solution and advanced through multiple evaluation rounds to the semi-finals.</p>
+          </div>
+        </article>
       </div>
-      <div>
-        <h3>Adobe India Hackathon 2025</h3>
-        <p class="where">Grand Finale, Noida · Team Debug Thugs (Sooravali)</p>
-        <p><b>Synapse-Docs</b> turns a library of PDFs into a searchable knowledge base. Select a passage while reading and it surfaces related sections from your other documents in under 500 ms, generates insights such as contradictions and examples, and can produce an audio podcast with Azure speech services.</p>
-        <p class="meta"><b>My role:</b> architecture and backend (FastAPI, vector search, deployment). <b>Teammates:</b> Aadesh N, Midhunan Vijendra Prabhaharan.</p>
-        <figure class="shot"><img src="assets/adobe-finale.jpg" alt="Receiving an award on stage at the Adobe India Hackathon 2025 Grand Finale" loading="lazy"></figure>
-        <ul class="tags"><li>Python</li><li>FastAPI</li><li>React</li><li>Gemini 2.5 Flash</li><li>FAISS</li><li>Azure Speech</li><li>Docker</li><li>Google Cloud Run</li></ul>
-        <div class="links">
-          <a href="https://synapse-docs-833062842245.us-central1.run.app/">Live app</a>
-          <a href="https://github.com/sooravali/synapse-docs">Source code</a>
+    </section>
+
+    <section id="ship">
+      <div class="wrap">
+        <h2>How I work in a hackathon</h2>
+        <p class="sub">Hack With Bangalore is an 8-hour build. These are the habits from my earlier finals that I would
+          bring to it.</p>
+        <div class="ship">
+          <div>
+            <h3>Ship something people can open</h3>
+            <p>Synapse-Docs went from a brief to a live app on Google Cloud Run that judges could use. I deploy early so
+              the demo never depends on my laptop.</p>
+          </div>
+          <div>
+            <h3>Start from a real constraint</h3>
+            <p>RouteX began with hard numbers: 9 vessels, 440,000 MT, 720 hours. I turn the problem statement into
+              measurable limits first, then build the model and the UI around them.</p>
+          </div>
+          <div>
+            <h3>Make the demo run in one command</h3>
+            <p>Live News Analyst starts with a single Docker Compose command and a scripted demo, so a judge can see the
+              result in under a minute.</p>
+          </div>
+        </div>
+        <div class="stackline">
+          <h3>What I can build with on day one</h3>
+          <p>FastAPI and Flask backends, React and Next.js frontends, LLM and RAG pipelines with Gemini and vector
+            search, Azure speech services, OR-Tools optimization, and Docker deploys to the cloud.</p>
         </div>
       </div>
-    </article>
+    </section>
 
-    <article class="entry">
-      <div>
-        <div class="place">Top 34</div>
-        <div class="field">Out of 130,000+ registrations</div>
+    <section id="projects">
+      <div class="wrap">
+        <h2>More projects</h2>
+        <p class="sub">Built for hackathons, my internship, coursework and clients.</p>
+
+        <article class="proj">
+          <div>
+            <h3>Live News Analyst</h3>
+            <div class="tag">DataQuest Hackathon 2025</div>
+          </div>
+          <div>
+            <p>A real-time RAG system on Pathway's streaming engine. News from RSS feeds becomes searchable in under 2
+              seconds, with a React dashboard, a rolling 10-minute sentiment chart and keyword alerts pushed over
+              WebSocket.</p>
+            <ul class="tags">
+              <li>Pathway</li>
+              <li>React</li>
+              <li>TypeScript</li>
+              <li>FastAPI</li>
+              <li>WebSocket</li>
+              <li>Docker</li>
+            </ul>
+            <div class="links"><a href="https://github.com/varunhirthik/Nexus">Source code</a></div>
+          </div>
+        </article>
+
+        <article class="proj">
+          <div>
+            <h3>FROST-CHAIN</h3>
+            <div class="tag">Blockchain traceability</div>
+          </div>
+          <div>
+            <p>Tracks frozen food batches from processor to retailer on Ethereum. Role-based permissions, temperature
+              readings with automatic compromise detection, an oracle interface for IoT sensors, and 38 passing contract
+              tests.</p>
+            <ul class="tags">
+              <li>Solidity</li>
+              <li>Hardhat</li>
+              <li>React</li>
+              <li>Ethers.js</li>
+              <li>Docker</li>
+            </ul>
+            <div class="links"><a href="https://github.com/varunhirthik">Source code on GitHub</a></div>
+          </div>
+        </article>
+
+        <article class="proj">
+          <div>
+            <h3>Krishi Vaidhya</h3>
+            <div class="tag">AI crop disease doctor</div>
+          </div>
+          <div>
+            <p>A Flutter app that diagnoses crop diseases from a leaf photo using Gemini Vision. It also builds a
+              sowing-to-harvest calendar, finds agricultural stores within 10 km, and has a community feed for farmers.
+            </p>
+            <ul class="tags">
+              <li>Flutter</li>
+              <li>Flask</li>
+              <li>Firebase</li>
+              <li>Gemini Vision</li>
+            </ul>
+            <div class="links"><a href="https://github.com/varunhirthik">Source code on GitHub</a></div>
+          </div>
+        </article>
+
+        <article class="proj">
+          <div>
+            <h3>Cafe warehouse system</h3>
+            <div class="tag">Freelance client work</div>
+          </div>
+          <div>
+            <p>A point-of-sale and inventory web app for a commercial establishment. Managers see profit across
+              departments, and staff are limited to their own department with role-based login and low-stock alerts.</p>
+            <ul class="tags">
+              <li>Flask</li>
+              <li>SQLite</li>
+              <li>Tailwind CSS</li>
+            </ul>
+          </div>
+        </article>
       </div>
-      <div>
-        <h3>HP Power Lab 2.0</h3>
-        <p class="where">Grand Finale, Symbiosis International University · Problem set by HPCL</p>
-        <p><b>RouteX</b> plans monthly coastal shipping for a 9-tanker fleet. It has to meet 440,000 MT of demand inside a 720-hour window at the lowest charter cost. A Google OR-Tools CP-SAT model evaluates 6,500+ voyage patterns in under 15 seconds, and a Next.js dashboard shows the plan on a map and a fleet timeline.</p>
-        <p class="meta"><b>Teammates:</b> Midhunan Vijendra Prabhaharan, Joshua Karthik Ashok, Aadesh N.</p>
-        <ul class="tags"><li>Python</li><li>OR-Tools CP-SAT</li><li>FastAPI</li><li>Next.js</li><li>TypeScript</li><li>MongoDB</li></ul>
-        <div class="links"><a href="https://lnkd.in/grSuqeQ5">Source code</a></div>
+    </section>
+
+    <section id="experience">
+      <div class="wrap">
+        <h2>Experience</h2>
+        <div class="role">
+          <h3>Software Development Engineer Intern, HPCL</h3>
+          <p class="where">Hindustan Petroleum Corporation Limited · Integrated Margin Management · Mumbai · May to June
+            2026</p>
+          <p>Led the project "Optimizing Maritime Logistics and Trade Operations" under the General Manager, IMM. I
+            delivered internal tools for optimization, dashboards and data automation.</p>
+          <ul>
+            <li>Rewrote an LPG vessel-scheduling solver from a PuLP/SCIP MILP model into Google OR-Tools CP-SAT, checked
+              it line by line against the original, traced the causes of infeasible schedules, and built a Flask web
+              platform around it.</li>
+            <li>Audited a coastal shipping scheduler across ten technical dimensions, checked its Excel outputs against
+              the input data, and documented every change for stakeholders.</li>
+            <li>Built a pipeline that extracts crude-assay PDFs into a macro-enabled Excel template using a vision LLM
+              with per-sheet prompts and deterministic post-processing.</li>
+            <li>Automated daily pipeline-file consolidation with a scheduled Python tool and built a Google Sheets
+              executive dashboard.</li>
+          </ul>
+          <p class="note">Internal HPCL data and code are confidential and not shown on this site.</p>
+        </div>
       </div>
-    </article>
+    </section>
 
-    <article class="entry">
-      <div>
-        <div class="place">Top 80</div>
-        <div class="field">Unstoppable E-School Leaders 2026</div>
+    <section id="skills">
+      <div class="wrap">
+        <h2>Skills and education</h2>
+        <dl class="skills">
+          <dt>Languages</dt>
+          <dd>Java, Python, C++, SQL, TypeScript, JavaScript, HTML/CSS</dd>
+          <dt>Backend and data</dt>
+          <dd>REST APIs, FastAPI, Flask, MongoDB, SQL databases, OOP, system design, OR-Tools (CP-SAT)</dd>
+          <dt>Frontend</dt>
+          <dd>React, Next.js, WebSocket</dd>
+          <dt>Tools and cloud</dt>
+          <dd>Git, GitHub, Docker, Google Cloud Run, Linux</dd>
+        </dl>
+        <div class="edu">
+          <h3>B.Tech in Computer Science and Engineering</h3>
+          <p class="where">Amrita Vishwa Vidyapeetham, Coimbatore · Graduating 2027</p>
+          <p>Data structures and algorithms, DBMS, software engineering, operating systems, operations research.</p>
+        </div>
       </div>
-      <div>
-        <h3>Unstop Talent Meet 2026</h3>
-        <p class="where">Unstop</p>
-        <p>Named one of the Top 80 Unstoppable E-School Leaders and honoured on stage at the Unstop Talent Meet.</p>
-        <figure class="shot"><img src="assets/unstop.jpg" alt="Receiving the Unstoppable E-School Leaders trophy on stage" loading="lazy"></figure>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="wrap">
+        <h2>Contact</h2>
+        <p class="sub">I'm open to teaming up, internships and software engineering roles for 2027. The quickest way to
+          reach me is email.</p>
+        <a class="big" href="mailto:varunhrithikdgl@gmail.com">varunhrithikdgl@gmail.com</a>
+        <ul>
+          <li><a href="https://github.com/varunhirthik">GitHub</a></li>
+          <li><a href="https://www.linkedin.com/in/varun-hirthik">LinkedIn</a></li>
+        </ul>
       </div>
-    </article>
+    </section>
+  </main>
 
-    <article class="entry">
-      <div>
-        <div class="place">Semi-Finalist</div>
-        <div class="field">ET-AI Hackathon 2026</div>
-      </div>
-      <div>
-        <h3>The Economic Times · May 2026</h3>
-        <p class="where">AI hackathon</p>
-        <p>Built an AI-driven solution and advanced through multiple evaluation rounds to the semi-finals.</p>
-      </div>
-    </article>
-  </div>
-</section>
+  <footer>
+    <div class="wrap">© 2026 Varun Hirthik</div>
+  </footer>
 
-<section id="projects">
-  <div class="wrap">
-    <h2>More projects</h2>
-    <p class="sub">Built for hackathons, my internship, coursework and clients.</p>
-
-    <article class="proj">
-      <div><h3>Live News Analyst</h3><div class="tag">DataQuest Hackathon 2025</div></div>
-      <div>
-        <p>A real-time RAG system on Pathway's streaming engine. News from RSS feeds becomes searchable in under 2 seconds, with a React dashboard, a rolling 10-minute sentiment chart and keyword alerts pushed over WebSocket.</p>
-        <ul class="tags"><li>Pathway</li><li>React</li><li>TypeScript</li><li>FastAPI</li><li>WebSocket</li><li>Docker</li></ul>
-        <div class="links"><a href="https://github.com/varunhirthik/Nexus">Source code</a></div>
-      </div>
-    </article>
-
-    <article class="proj">
-      <div><h3>FROST-CHAIN</h3><div class="tag">Blockchain traceability</div></div>
-      <div>
-        <p>Tracks frozen food batches from processor to retailer on Ethereum. Role-based permissions, temperature readings with automatic compromise detection, an oracle interface for IoT sensors, and 38 passing contract tests.</p>
-        <ul class="tags"><li>Solidity</li><li>Hardhat</li><li>React</li><li>Ethers.js</li><li>Docker</li></ul>
-        <div class="links"><a href="https://github.com/varunhirthik">Source code on GitHub</a></div>
-      </div>
-    </article>
-
-    <article class="proj">
-      <div><h3>Krishi Vaidhya</h3><div class="tag">AI crop disease doctor</div></div>
-      <div>
-        <p>A Flutter app that diagnoses crop diseases from a leaf photo using Gemini Vision. It also builds a sowing-to-harvest calendar, finds agricultural stores within 10 km, and has a community feed for farmers.</p>
-        <ul class="tags"><li>Flutter</li><li>Flask</li><li>Firebase</li><li>Gemini Vision</li></ul>
-        <div class="links"><a href="https://github.com/varunhirthik">Source code on GitHub</a></div>
-      </div>
-    </article>
-
-    <article class="proj">
-      <div><h3>Cafe warehouse system</h3><div class="tag">Freelance client work</div></div>
-      <div>
-        <p>A point-of-sale and inventory web app for a commercial establishment. Managers see profit across departments, and staff are limited to their own department with role-based login and low-stock alerts.</p>
-        <ul class="tags"><li>Flask</li><li>SQLite</li><li>Tailwind CSS</li></ul>
-      </div>
-    </article>
-  </div>
-</section>
-
-<section id="experience">
-  <div class="wrap">
-    <h2>Experience</h2>
-    <div class="role">
-      <h3>Software Development Engineer Intern, HPCL</h3>
-      <p class="where">Hindustan Petroleum Corporation Limited · Integrated Margin Management · Mumbai · May to June 2026</p>
-      <p>Led the project "Optimizing Maritime Logistics and Trade Operations" under the General Manager, IMM. I delivered internal tools for optimization, dashboards and data automation.</p>
-      <ul>
-        <li>Rewrote an LPG vessel-scheduling solver from a PuLP/SCIP MILP model into Google OR-Tools CP-SAT, checked it line by line against the original, traced the causes of infeasible schedules, and built a Flask web platform around it.</li>
-        <li>Audited a coastal shipping scheduler across ten technical dimensions, checked its Excel outputs against the input data, and documented every change for stakeholders.</li>
-        <li>Built a pipeline that extracts crude-assay PDFs into a macro-enabled Excel template using a vision LLM with per-sheet prompts and deterministic post-processing.</li>
-        <li>Automated daily pipeline-file consolidation with a scheduled Python tool and built a Google Sheets executive dashboard.</li>
-      </ul>
-      <p class="note">Internal HPCL data and code are confidential and not shown on this site.</p>
-    </div>
-  </div>
-</section>
-
-<section id="skills">
-  <div class="wrap">
-    <h2>Skills and education</h2>
-    <dl class="skills">
-      <dt>Languages</dt><dd>Java, Python, C++, SQL, TypeScript, JavaScript, HTML/CSS</dd>
-      <dt>Backend and data</dt><dd>REST APIs, FastAPI, Flask, MongoDB, SQL databases, OOP, system design, OR-Tools (CP-SAT)</dd>
-      <dt>Frontend</dt><dd>React, Next.js, WebSocket</dd>
-      <dt>Tools and cloud</dt><dd>Git, GitHub, Docker, Google Cloud Run, Linux</dd>
-    </dl>
-    <div class="edu">
-      <h3>B.Tech in Computer Science and Engineering</h3>
-      <p class="where">Amrita Vishwa Vidyapeetham, Coimbatore · Graduating 2027</p>
-      <p>Data structures and algorithms, DBMS, software engineering, operating systems, operations research.</p>
-    </div>
-  </div>
-</section>
-
-<section id="contact" class="contact">
-  <div class="wrap">
-    <h2>Contact</h2>
-    <p class="sub">I'm looking for software engineering roles for 2027. The quickest way to reach me is email.</p>
-    <a class="big" href="mailto:varunhrithikdgl@gmail.com">varunhrithikdgl@gmail.com</a>
-    <ul>
-      <li><a href="https://github.com/varunhirthik">GitHub</a></li>
-      <li><a href="https://www.linkedin.com/in/varun-hirthik">LinkedIn</a></li>
-    </ul>
-  </div>
-</section>
-</main>
-
-<footer><div class="wrap">© 2026 Varun Hirthik</div></footer>
-
-<script>
-(function(){
-  var root=document.documentElement,btn=document.getElementById('theme');
-  try{var s=localStorage.getItem('theme');if(s)root.setAttribute('data-theme',s)}catch(e){}
-  btn.addEventListener('click',function(){
-    var dark=root.getAttribute('data-theme')==='dark'||(!root.getAttribute('data-theme')&&matchMedia('(prefers-color-scheme: dark)').matches);
-    var next=dark?'light':'dark';root.setAttribute('data-theme',next);
-    try{localStorage.setItem('theme',next)}catch(e){}
-  });
-})();
-</script>
+  <script>
+    (function () {
+      var root = document.documentElement, btn = document.getElementById('theme');
+      try { var s = localStorage.getItem('theme'); if (s) root.setAttribute('data-theme', s) } catch (e) { }
+      btn.addEventListener('click', function () {
+        var dark = root.getAttribute('data-theme') === 'dark' || (!root.getAttribute('data-theme') && matchMedia('(prefers-color-scheme: dark)').matches);
+        var next = dark ? 'light' : 'dark'; root.setAttribute('data-theme', next);
+        try { localStorage.setItem('theme', next) } catch (e) { }
+      });
+    })();
+  </script>
 </body>
+
 </html>
